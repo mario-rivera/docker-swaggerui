@@ -1,0 +1,17 @@
+openapi: 3.0.0
+info:
+  title: 'My API'
+  version: '0.1'
+paths:
+  /api/resource.json:
+    get:
+      responses:
+        '200':
+          description: 'An example resource'
+components:
+  securitySchemes:
+    ApiToken:
+      type: apiKey
+      description: 'Bearer xxxx'
+      name: Authorization
+      in: header
